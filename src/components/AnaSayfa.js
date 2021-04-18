@@ -6,7 +6,7 @@ class AnaSayfa extends Component {
     render() {
         return (
             <div>
-                <h1 className="baslik">MERABA</h1>
+                <h1 className="baslik">Selam! Ben Adal.</h1>
                 <style jsx>{`
                     .baslik {
                         color: #35ff96;
