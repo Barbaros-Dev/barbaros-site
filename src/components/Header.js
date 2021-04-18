@@ -123,13 +123,14 @@ class Header extends Component {
                         padding-bottom: .3125rem;
                         position: relative;
                         top: 15px;
-                        color: #fff;
+                        color: #FF914D;
                         font-size: 1.25rem;
                         text-decoration: none;
+                        font-family: "Batangas";
                     }
 
                     .nav-title:hover {
-                        color: #fff;
+                        color: #FF914D;
                         text-decoration: none;
                     }
 
