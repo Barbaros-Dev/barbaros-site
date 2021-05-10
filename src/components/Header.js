@@ -51,10 +51,6 @@ class Header extends Component {
                     </div>
                 </header>
                 <style>{`
-                    header {
-                        font-family: "Batangas";
-                    }
-
                     .container {
                         width: 80%;
                         margin: 0 auto;
