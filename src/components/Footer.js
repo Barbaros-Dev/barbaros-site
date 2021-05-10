@@ -11,7 +11,6 @@ class Footer extends Component {
                 </footer>
                 <style>{`
                     footer {
-                        font-family: "Batangas";
                         background-color: #212529;
                         color: #f4f7f5;
                         width: 100%;
