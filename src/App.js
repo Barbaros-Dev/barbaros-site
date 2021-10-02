@@ -13,7 +13,6 @@ import Düzenle from "./components/Profil-Düzenle";
 function App() {
   return (
     <div className="App">
-      <Header/>
       <BrowserRouter>
         <Switch>
             <Route exact path='/' component={AnaSayfa} />
@@ -24,7 +23,6 @@ function App() {
             <Route exact path='*' component={Error} />
         </Switch>
       </BrowserRouter>
-      <Footer/>
     </div>
   );
 }
