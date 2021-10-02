@@ -1,5 +1,4 @@
 import { Route, Switch, BrowserRouter } from 'react-router-dom'
-import logo from './logo.svg';
 import './App.css';
 import AnaSayfa from "./components/AnaSayfa";
 import Error from "./components/404";
