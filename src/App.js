@@ -16,10 +16,6 @@ function App() {
       <BrowserRouter>
         <Switch>
             <Route exact path='/' component={AnaSayfa} />
-            <Route exact path='/panel' component={Panel} />
-            <Route exact path='/giris' component={Giriş} />
-            <Route exact path='/profil' component={Profil} />
-            <Route exact path='/profil/düzenle' component={Düzenle} />
             <Route exact path='*' component={Error} />
         </Switch>
       </BrowserRouter>
