@@ -23,7 +23,7 @@ class AnaSayfa extends Component {
                             </a>
                             <a href="https://barbarostagram.herokuapp.com" target="blank">
                                 <div className="project">
-                                    <img draggable="false" width="100" height="100" src="https://barbarostagram.herokuapp.com/Barbarostagram-Logo.png"/>
+                                    <img draggable="false" width="100" height="100" src="/Barbarostagram-Logo.png"/>
                                     <h2 className="projectName">Barbarostagram</h2>
                                 </div>
                             </a>
