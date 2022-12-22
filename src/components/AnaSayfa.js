@@ -21,10 +21,10 @@ class AnaSayfa extends Component {
                                    <h2 className="projectName">ÖvGeç</h2>
                                 </div>
                             </a>
-                            <a href="https://barbarostagram.herokuapp.com" target="blank">
+                            <a href="https://marti-bot.vercel.app" target="blank">
                                 <div className="project">
-                                    <img draggable="false" width="100" height="100" src="https://barbaros-dev.herokuapp.com/Barbarostagram-Logo.png"/>
-                                    <h2 className="projectName">Barbarostagram</h2>
+                                    <img draggable="false" width="100" height="100" src="https://marti-bot.vercel.app/favicon.ico"/>
+                                    <h2 className="projectName">Martı BOT</h2>
                                 </div>
                             </a>
                         </div>
