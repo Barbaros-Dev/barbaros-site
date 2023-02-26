@@ -26,7 +26,7 @@ function App() {
                     </a>
                     <a href="https://play.google.com/store/apps/details?id=com.mootie.sevgisayaci" target="blank">
                         <div className="project">
-                            <img draggable="false" width="100" height="100" src="https://play-lh.googleusercontent.com/LVjfFZSbghKize8WKIzOvvg408MY5koDdE6BFxR-yfnmzdQpNl9Kz1i2mUL8uBigFguw=w240-h480"/>
+                            <img style={{ borderRadius: 20 }} draggable="false" width="100" height="100" src="https://play-lh.googleusercontent.com/LVjfFZSbghKize8WKIzOvvg408MY5koDdE6BFxR-yfnmzdQpNl9Kz1i2mUL8uBigFguw=w240-h480"/>
                             <h2 className="projectName">Sevgi Sayacı</h2>
                         </div>
                     </a>
