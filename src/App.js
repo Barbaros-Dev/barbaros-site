@@ -18,9 +18,9 @@ function App() {
                            <h2 className="projectName">ÖvGeç</h2>
                         </div>
                     </a>
-                    <a href="https://marti-bot.vercel.app" target="blank">
+                    <a href="https://marti.barbaros-dev.xyz" target="blank">
                         <div className="project">
-                            <img draggable="false" width="100" height="100" src="https://marti-bot.vercel.app/favicon.ico"/>
+                            <img draggable="false" width="100" height="100" src="https://marti.barbaros-dev.xyz/favicon.ico"/>
                             <h2 className="projectName">Martı BOT</h2>
                         </div>
                     </a>
