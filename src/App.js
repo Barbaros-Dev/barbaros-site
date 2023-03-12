@@ -1,12 +1,25 @@
 import './App.css';
+import { FaGithub, FaYoutube, FaDiscord, FaSpotify } from 'react-icons/fa'
 
 function App() {
   return (
     <>
         <div className="start">
             <h1>Barbaros</h1>
+            <div className='links'>
+              <a href='https://www.youtube.com/@barbaros-dev' target="blank" className='icon' style={{ margin: 5 }}><FaYoutube size={25}></FaYoutube></a>
+              <a href='https://github.com/Barbaros-Dev' target="blank" className='icon' style={{ margin: 5 }}><FaGithub size={25}></FaGithub></a>
+              <a href='https://open.spotify.com/user/f71lm8afeztxi8zperh7rafba?si=625ea2195bc94153' target="blank" className='icon' style={{ margin: 5 }}><FaSpotify size={25}></FaSpotify></a>
+              <a href='https://discord.com/users/708579930979565588' target="blank" className='icon' style={{ margin: 5 }}><FaDiscord size={25}></FaDiscord></a>
+            </div>
+            <div onClick={() => document.getElementById("projects").scrollIntoView()} className='scroll'>
+              <label className='scrollText'>Aşağı Kaydır</label>
+              <span className="mouse">
+                <span className='wheel'></span>
+              </span>
+            </div>
         </div>
-        <div className="secondMain">
+        <div className="secondMain" id="projects">
             <div className="projectsDiv">
                 <h1>Projelerim</h1>
                 <br/>
@@ -37,12 +50,86 @@ function App() {
             <h4 style={{ color: "#fff" }}><a className="brbrs" style={{ color: "#FF914D" }}>Barbaros</a> tarafından geliştirildi.</h4>
         </div>
         <style>{`
+            html {
+              scroll-behavior: smooth;
+            }
+
+            .scrollText {
+              font-family: 'Nunito';
+              color: #fff;
+              cursor: pointer;
+            }
+
+            .scroll:hover .scrollText {
+              color: #ff914d;
+            }
+
+            .scroll {
+              cursor: pointer;
+              position: absolute;
+              bottom: 160px;
+            }
+
+            .wheel {
+              background: #FFF;
+              border-radius: 100%;
+              display: block;
+              position: absolute;
+              top: 8px;
+              left: 50%;
+              transform: translateX(-50%);
+              height: 4px;
+              width: 4px;
+              transition-duration: 0.2s;
+            }
+
+            .scroll:hover .wheel {
+              background: #ff914d;
+              border-radius: 100%;
+              display: block;
+              position: absolute;
+              top: 14px;
+              left: 50%;
+              transform: translateX(-50%);
+              height: 4px;
+              width: 4px;
+            }
+
+            .scroll:hover .mouse {
+              border: solid 2px #ff914d;
+            }
+
+            .mouse {
+              transition-duration: 0.2s;
+              border: solid 2px #FFF;
+              border-radius: 16px;
+              display: block;
+              margin: auto;
+              margin-top: 10px;
+              height: 26px;
+              position: relative;
+              width: 20px;
+            }
+
+            .links {
+              margin-top: 15px;
+            }
+
+            .icon {
+              transition-duration: 0.2s;
+              color: #fff;
+            }
+
+            .icon:hover {
+              color: #ff914d;
+            }
+
             h4 {
               font-family: "Nunito";
             }
         
             .footer {
-              background: #082032;
+              background: #5B5879;
               height: 150px;
               user-select: none;
               justify-content: center;
@@ -76,12 +163,12 @@ function App() {
               overflow: auto;
               width: 190px;
               height: 194px;
-              background: #082032;
+              background: #2F3B56;
               color: #fff;
             }
         
             .project:hover {
-              background: #2C394B;
+              background: #5B5879;
             }
             
             .projectName {
@@ -90,13 +177,12 @@ function App() {
         
             .start {
               height: calc(100vh);
-              background-color: #082032;
+              background: linear-gradient(#082032, #2F3B56);
               justify-content: center;
               align-items: center;
               display: flex;
-              font-size: 40px;
               user-select: none;
-              color: #FF914D;
+              flex-direction: column;
             }
         
             .secondMain {
@@ -106,14 +192,18 @@ function App() {
               flex-direction: row;
               height: calc(100vh);
               user-select: none;
+              background: linear-gradient(#2F3B56, #5B5879);
+              color: #fff;
             }
         
             h1 {
               margin: 0;
             }
         
-            .header h1 {
+            .start h1 {
               z-index: 1;
+              font-size: 80px;
+              color: #FF914D;
             }
         `}</style>
     </>
