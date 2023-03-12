@@ -1,7 +1,15 @@
 import './App.css';
 import { FaGithub, FaYoutube, FaDiscord, FaSpotify } from 'react-icons/fa'
+import { useEffect } from 'react';
+import { useState } from 'react';
 
 function App() {
+  const [name, setName] = useState("Yükleniyor...")
+
+  useEffect(() => {
+    fetch("https://api.marti-bot.cf/get/708579930979565588").then(response => response.json()).then(data => setName(data.username + "#" + data.discriminator))
+  }, [])
+
   return (
     <>
         <div className="start">
@@ -163,12 +171,16 @@ function App() {
               overflow: auto;
               width: 190px;
               height: 194px;
-              background: #2F3B56;
+              background: rgba(0, 0, 0, 0.1);
               color: #fff;
             }
         
             .project:hover {
-              background: #5B5879;
+              background: rgba(0, 0, 0, 0.2);
+            }
+
+            .project:active {
+              background: rgba(0, 0, 0, 0.3);
             }
             
             .projectName {
