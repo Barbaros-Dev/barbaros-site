@@ -55,7 +55,7 @@ function App() {
             </div>
         </div>
         <div className="footer">
-            <h4 style={{ color: "#fff" }}><a className="brbrs" >Barbaros</a> tarafından geliştirildi.</h4>
+            <h4 style={{ color: "#fff" }}><a className="brbrs" style={{ color: "#FF914D" }}>Barbaros</a> tarafından geliştirildi.</h4>
         </div>
         <style>{`
             html {
