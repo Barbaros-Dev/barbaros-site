@@ -55,11 +55,18 @@ function App() {
             </div>
         </div>
         <div className="footer">
-            <h4 style={{ color: "#fff" }}><a href='https://discord.com/users/708579930979565588' target='blank' className="brbrs" style={{ color: "#FF914D", transitionDuration: "0.2s", cursor: "pointer" }}>Barbaros</a> tarafından geliştirildi.</h4>
+            <h4 style={{ color: "#fff" }}><a href='https://discord.com/users/708579930979565588' target='blank' className="brbrs" style={{ transitionDuration: "0.2s", cursor: "pointer" }}>Barbaros</a> tarafından geliştirildi.</h4>
         </div>
         <style>{`
+            .brbrs {
+              color: #FF914D
+            }
+
             .brbrs:hover {
               color: #fff;
+              background: #FF914D;
+              padding: 5px;
+              border-radius: 10px;
             }
 
             html {
