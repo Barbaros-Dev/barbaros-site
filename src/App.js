@@ -55,9 +55,13 @@ function App() {
             </div>
         </div>
         <div className="footer">
-            <h4 style={{ color: "#fff" }}><a className="brbrs" style={{ color: "#FF914D" }}>Barbaros</a> tarafından geliştirildi.</h4>
+            <h4 style={{ color: "#fff" }}><a href='https://discord.com/users/708579930979565588' target='blank' className="brbrs" style={{ color: "#FF914D", transitionDuration: "0.2s", cursor: "pointer" }}>Barbaros</a> tarafından geliştirildi.</h4>
         </div>
         <style>{`
+            .brbrs:hover {
+              color: #fff;
+            }
+
             html {
               scroll-behavior: smooth;
             }
