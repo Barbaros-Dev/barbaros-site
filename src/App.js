@@ -51,6 +51,12 @@ function App() {
                             <h2 className="projectName">Sevgi Sayacı</h2>
                         </div>
                     </a>
+                    <a href="https://dersteyim-yeni.vercel.app" target="blank">
+                        <div className="project">
+                            <img style={{ borderRadius: 20 }} draggable="false" width="100" height="100" src="https://dersteyim-yeni.vercel.app/logo.png"/>
+                            <h2 className="projectName">Dersteyim</h2>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
