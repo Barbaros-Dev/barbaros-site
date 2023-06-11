@@ -1,40 +1,8 @@
-@font-face {
-  font-family: 'Batangas';
-  src: url('Batangas-Bold.woff2') format('woff2'),
-      url('Batangas-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
 
 body {
   margin: 0;
-  font-family: "Batangas";
+  font-family: "Nunito";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: "Batangas";
-}
-
-body {
-  overflow: overlay;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.1);
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background: rgba(0, 0, 0, 0.3)
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.4)
 }

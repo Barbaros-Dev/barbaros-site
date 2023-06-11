@@ -1,14 +1,164 @@
 @font-face {
-  font-family: 'Batangas';
-  src: url('Batangas-Bold.woff2') format('woff2'),
-      url('Batangas-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+  font-family: "Batangas";
+  src: url(Batangas\ Bold\ 700.otf);
 }
 
-button {
+body {
+  background-color: #082032;
+}
+
+html {
+  scroll-behavior: smooth;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.header {
+  color: #ff914d;
+  font-family: "Batangas";
+  font-size: 80px;
+  margin: 0;
+}
+
+.icon {
+  color: #fff;
+  padding: 10px;
+  position: relative;
+  transition: 0.2s;
+  border-radius: 50%;
+}
+
+.social:hover .icon {
+  background-color: #ff914d;
+}
+
+.social .icon:hover {
+  background-color: #ff914d;
+}
+
+.scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20%;
+  color: #fff;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+.scroll:hover {
+  color: #ff914d;
+}
+
+.seperator {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.projects {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.projectsContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.project {
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  color: #fff;
+  font-size: 20px;
+  margin: 10px;
+  border-radius: 20px;
+  transition: 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.project:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.projectName {
+  padding: 10px;
   cursor: pointer;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito')
+.projectImage {
+  border-radius: 20px;
+}
+
+.projectsHeader {
+  color: #fff;
+  position: absolute;
+  top: 20%;
+}
+
+.footer {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerText {
+  color: #fff;
+}
+
+.footerName {
+  color: #ff914d;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.footerName:hover {
+  padding: 5px;
+  background-color: #ff914d;
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  .header {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 858px) {
+  .projectsContainer {
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+
+  .projectsHeader {
+    position: relative;
+    padding: 40px;
+  }
+}
