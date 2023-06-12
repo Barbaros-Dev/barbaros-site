@@ -61,7 +61,7 @@ function App() {
       </div>
       <div className='seperator'></div>
       <div id='projects' className='projects'>
-        <h1 className='projectsHeader'>My Projects</h1>
+        <h1 className='projectsHeader'>Projelerim</h1>
         <div className='projectsContainer'>
           {projects.map((project, i) => (
             <a target='blank' href={screenWidth < 700 && project.mobile ? project.mobile : project.link} className='project' key={i}>
