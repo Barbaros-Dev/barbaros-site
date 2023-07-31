@@ -50,7 +50,7 @@ function App() {
           <a className='social' target='blank' href='https://discord.com/users/708579930979565588'>
             <FaDiscord className='icon' size={25}></FaDiscord>
           </a>
-          <a className='social' target='blank' href='https://instagram.com/esadkocamis'>
+          <a className='social' target='blank' href='https://instagram.com/aesadkocamis'>
             <FaInstagram className='icon' size={25}></FaInstagram>
           </a>
         </div>
@@ -61,7 +61,7 @@ function App() {
       </div>
       <div className='seperator'></div>
       <div id='projects' className='projects'>
-        <h1 className='projectsHeader'>Projelerim</h1>
+        <h1 className='projectsHeader'>Projelerim </h1>
         <div className='projectsContainer'>
           {projects.map((project, i) => (
             <a target='blank' href={screenWidth < 700 && project.mobile ? project.mobile : project.link} className='project' key={i}>
