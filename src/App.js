@@ -4,6 +4,11 @@ import { FaYoutube, FaGithub, FaSpotify, FaDiscord, FaInstagram, FaCaretDown } f
 
 function App() {
   const [screenWidth, setScreenWidth] = useState()
+  const [description] = useState([
+    "Ben developer'ım",
+    "Ben front-end geliştiriciyim",
+    "Ben back-end severim"
+  ])
 
   const projects = [
     {
@@ -31,12 +36,23 @@ function App() {
 
   useEffect(() => {
     setScreenWidth(window.screen.width)
+    let index = 0
+
+    setInterval(() => {
+      if(description.length === index + 1) index = 0
+      else index += 1
+      document.getElementById("description").classList.remove("animate__bounceIn")
+      document.getElementById("description").innerText = description[index]
+      void document.getElementById("description").offsetWidth
+      document.getElementById("description").classList.add("animate__bounceIn")
+    }, 3000)
   }, [])
 
   return (
     <div className="container">
       <div className='home'>
         <h1 className='header'>Barbaros</h1>
+        <span className='animate__bounceIn' id='description'>{description[0]}</span>
         <div className='socials'>
           <a className='social' target='blank' href='https://youtube.com/@barbaros-dev'>
             <FaYoutube className='icon' size={25}></FaYoutube>
@@ -61,11 +77,11 @@ function App() {
       </div>
       <div className='seperator'></div>
       <div id='projects' className='projects'>
-        <h1 className='projectsHeader'>Projelerim </h1>
+        <h1 className='projectsHeader'>Projelerim</h1>
         <div className='projectsContainer'>
           {projects.map((project, i) => (
             <a target='blank' href={screenWidth < 700 && project.mobile ? project.mobile : project.link} className='project' key={i}>
-              <img width={100} className='projectImage' src={project.image}></img>
+              <img alt={project.name} width={100} className='projectImage' src={project.image}></img>
               <label className='projectName'>{project.name}</label>
             </a>
           ))}
@@ -73,7 +89,7 @@ function App() {
       </div>
       <div className='seperator'></div>
       <div className='footer'>
-        <div className='footerText'><a target='blank' href='https://discord.com/users/708579930979565588' className='footerName'>Barbaros</a> tarafından geliştirildi.</div>
+        <div className='footerText'><a target='blank' href='https://discord.com/users/708579930979565588' className='footerName'>Barbaros</a> tarafından 💖 ile geliştirildi.</div>
       </div>
     </div>
   );

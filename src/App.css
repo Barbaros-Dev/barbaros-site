@@ -5,6 +5,7 @@
 
 body {
   background-color: #082032;
+  color: #fff;
 }
 
 html {
@@ -86,6 +87,7 @@ html {
 
 .project {
   background-color: rgba(0, 0, 0, 0.2);
+  width: 140px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -143,6 +145,10 @@ html {
   padding: 5px;
   background-color: #ff914d;
   color: #fff;
+}
+
+.socials {
+  margin-top: 25px;
 }
 
 @media (max-width: 700px) {
