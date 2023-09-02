@@ -71,13 +71,13 @@ function App() {
           </a>
         </div>
         <a href='#projects' className='scroll'>
-          Projelerim
+          Projeler
           <FaCaretDown size={25}></FaCaretDown>
         </a>
       </div>
       <div className='seperator'></div>
       <div id='projects' className='projects'>
-        <h1 className='projectsHeader'>Projelerim</h1>
+        <h1 className='projectsHeader'>Projeler</h1>
         <div className='projectsContainer'>
           {projects.map((project, i) => (
             <a target='blank' href={screenWidth < 700 && project.mobile ? project.mobile : project.link} className='project' key={i}>
