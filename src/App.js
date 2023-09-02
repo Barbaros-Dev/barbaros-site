@@ -71,6 +71,7 @@ function App() {
           </a>
         </div>
         <a href='#projects' className='scroll'>
+          Projelerim
           <FaCaretDown size={25}></FaCaretDown>
         </a>
       </div>
