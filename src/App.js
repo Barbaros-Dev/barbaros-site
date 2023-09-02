@@ -71,7 +71,6 @@ function App() {
           </a>
         </div>
         <a href='#projects' className='scroll'>
-          Aşağı Kaydır
           <FaCaretDown size={25}></FaCaretDown>
         </a>
       </div>
