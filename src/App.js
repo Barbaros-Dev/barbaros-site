@@ -31,6 +31,11 @@ function App() {
       name: "Dersteyim",
       image: "https://dersteyim-yeni.vercel.app/logo.png",
       link: "https://dersteyim-yeni.vercel.app"
+    },
+    {
+      name: "Geribildirim App",
+      image: "https://geribildirim.vercel.app/logo.png",
+      link: "https://geribildirim.vercel.app"
     }
   ]
 
