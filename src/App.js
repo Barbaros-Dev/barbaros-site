@@ -51,7 +51,7 @@ function App() {
       void document.getElementById("description").offsetWidth
       document.getElementById("description").classList.add("animate__bounceIn")
     }, 3000)
-  }, [])
+  }, [description])
 
   return (
     <div className="container">
