@@ -94,7 +94,7 @@ function App() {
       </div>
       <div className='seperator'></div>
       <div className='footer'>
-        <div className='footerText'><a target='blank' href='https://discord.com/users/708579930979565588' className='footerName'>Barbaros</a> tarafından 💖 ile geliştirildi.</div>
+        <div className='footerText'><a target='blank' href='https://discord.com/users/708579930979565588' className='footerName'>Ahmet Esad Kocamış</a> tarafından 💖 ile geliştirildi.</div>
       </div>
     </div>
   );
