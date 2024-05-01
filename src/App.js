@@ -113,7 +113,7 @@ function App() {
         <div className='worksContainer'>
           {works.map((work, i) => (
             <div className='work' key={i}>
-              <label className='workName'>{work.name}</label>
+              <label className='workName'>{work.name} <label style={{ color: "rgb(180, 182, 183)" }}>- {work.description}</label></label>
               <div style={{ position: "relative", display: "flex", justifyContent: "center", alignItems: "center" }}>
                 <img draggable="false" alt={work.name} width={480} height={270} className='workImage' src={work.image}></img>
                 <div className='workContent'>
