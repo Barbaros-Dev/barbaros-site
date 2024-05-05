@@ -46,15 +46,6 @@ function App() {
 
   const [works] = useState([
     {
-      name: "VIPMUN'23",
-      image: "/assets/vipmun.png",
-      link: "https://vipmun.com",
-      description: "MUN websitesi",
-      technologies: [
-        "Next.js"
-      ]
-    },
-    {
       name: "ALMUN'24",
       image: "/assets/almun.png",
       link: "https://almun24.com",
@@ -62,6 +53,15 @@ function App() {
       technologies: [
         "Next.js",
         "Tailwind CSS"
+      ]
+    },
+    {
+      name: "VIPMUN'23",
+      image: "/assets/vipmun.png",
+      link: "https://vipmun.com",
+      description: "MUN websitesi",
+      technologies: [
+        "Next.js"
       ]
     }
   ])
