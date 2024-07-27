@@ -98,9 +98,6 @@ function App() {
           <a className='social' target='blank' href='https://discord.com/users/708579930979565588'>
             <FaDiscord className='icon' size={25}></FaDiscord>
           </a>
-          <a className='social' target='blank' href='https://instagram.com/aesadkocamis'>
-            <FaInstagram className='icon' size={25}></FaInstagram>
-          </a>
         </div>
         <a href='#portfolio' className='scroll'>
           Portfolyo
